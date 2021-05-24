@@ -1,0 +1,234 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main > .main {
+    display: flex;
+    align-items: flex-end;
+    background: url("../images/main/main.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: calc(100vw / 2);
+    user-select: none;
+}
+
+main > .main > .content {
+    background: url("../images/main/main-content-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40vw;
+    height: 25vw;
+    padding: 6.2vw 1.875vw 1.875vw;
+    box-sizing: border-box;
+}
+
+main > .main > .content > h1.title {
+    font: normal 3.15vw "TacticSans Bold";
+}
+
+main > .main > .content > h2.title {
+    margin-top: 1.875vw;
+    font: normal 1.875vw "Geometria Bold";
+}
+
+main > .navigation > nav {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+main > .navigation a {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    padding: 1.3vw;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+main > .navigation a:hover {
+    background: #01E6AB;
+}
+
+main > .navigation a > .title {
+    display: flex;
+    color: #01E6AB;
+    text-transform: uppercase;
+    font: normal 1.1vw "TacticSans Bold";
+    letter-spacing: 1px;
+    margin-bottom: 2vw;
+    transition: all 0.75s ease;
+    margin-top: 0.2vw;
+}
+
+main > .navigation a:hover > .title {
+    color: black;
+    letter-spacing: 2px;
+}
+
+main > .navigation a:not(:first-child) {
+    border-left: 1px solid #262626;
+}
+
+main > .navigation a > .image {
+    display: flex;
+    justify-content: center;
+    transition: all 0.75s ease;
+}
+
+main > .navigation a > .image:after {
+    position: relative;
+    display: inline-flex;
+    width: 13.5vw;
+    height: 13.5vw;
+    background: var(--url);
+    background-size: cover;
+    content: "";
+}
+
+main > .navigation a > .image.default:after {
+    position: absolute;
+}
+
+main > .navigation a > .image.active {
+    opacity: 0;
+}
+
+main > .navigation a:hover > .image.default {
+    opacity: 0;
+}
+
+main > .navigation a:hover > .image.active {
+    opacity: 1;
+}
+
+main > .navigation a > .go {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font: normal 1.2vw "Geometria Medium";
+    left: calc(-100% + 1.875vw);
+    transition: all 0.5s ease;
+    margin-top: 1.875vw;
+}
+
+main > .navigation a > .go > .arrow {
+    display: inline-flex;
+    width: 1.875vw;
+    width: 1.875vw;
+    background-image: url("../images/main/arrow-green.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0.4vw;
+}
+
+main > .navigation a:hover > .go {
+    left: 0px;
+}
+
+main > .navigation a:hover > .go > .arrow {
+    background-image: url("../images/main/arrow-black.svg");
+}
+
+main > .news a {
+    text-decoration: none;
+    color: black;
+}
+
+main > .news .title {
+    display: flex;
+    align-items: center;
+    padding: 2.5vw 1.85vw;
+    font: normal 1.5vw "TacticSans Bold";
+    color: #01E6AB;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+main > .news .title:before {
+    display: inline-flex;
+    width: 1.2vw;
+    height: 1.4vw;
+    background: url("../images/main/news-icon.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 1.5vw;
+    content: "";
+}
+
+main > .news .title:after {
+    width: 1.85vw;
+    height: 1.85vw;
+    background: url("../images/main/arrow-green.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 0.7vw;
+    content: "";
+}
+
+main > .news .list {
+    display: flex;
+    justify-content: center;
+    background: #DBDBDB;
+    overflow: hidden;
+}
+
+main > .news .news {
+    display: flex;
+    flex-direction: column;
+    width: 24.5vw;
+    transition: all 0.45s ease;
+}
+
+main > .news .news > .image {
+    width: 100%;
+}
+
+main > .news .news > .content {
+    background: white;
+    height: 14vw;
+    transition: all 0.45s ease;
+}
+
+main > .news .news > .content > .category {
+    display: inline-flex;
+    background: #01E6AB;
+    font: normal 0.95vw "TacticSans Medium";
+    padding: 0.3vw 0.6vw;
+    letter-spacing: 1px;
+}
+
+main > .news .news > .content > .text {
+    padding: 1.875vw 1.25vw 1.25vw;
+    font: normal 1.25vw "Geometria Bold";
+    color: #2A303E;
+    line-height: 2;
+}
+
+main > .news .news > .content > .date {
+    color: #01E6AB;
+    font: normal 0.95vw "Geometria Medium";
+    line-height: 1.33;
+    padding: 0px 1.25vw;
+}
+
+main > .news .news:hover > .content {
+    background: #01E6AB;
+    height: calc(14vw + 1.75vw);
+    margin-top: -1.75vw;
+}
+
+main > .news .news:hover > .content > .category {
+    background: black;
+    color: white;
+}
+
+main > .news .news:hover > .content > .date {
+    color: black;
+}
+
+main > .news .news:hover {
+    box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.3);
+}

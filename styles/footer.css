@@ -1,0 +1,189 @@
+footer {
+    display: grid;
+    grid-template-areas: "main work-schedule subscribe social" "other other other other";
+    grid-template-columns: 24% 24% 26% 26%;
+    grid-column-gap: 48px;
+    padding: 32px calc(calc(100vw - 1280px) / 2);
+    padding-bottom: 0px;
+    background: black;
+    color: white;
+}
+
+footer .logo {
+    display: flex;
+    width: 156px;
+    height: 16px;
+    background: url("../images/logo.svg");
+    background-size: cover;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer h3.title {
+    font: normal 14px "TacticSans Bold";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0px;
+    margin-bottom: 16px;
+}
+
+footer > .main {
+    grid-area: main;
+}
+
+footer > .main > .list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    list-style: none;
+    padding-left: 0px;
+}
+
+footer > .main > .list > li:not(:first-child) {
+    margin-top: 8px;
+}
+
+footer > .main > .list a {
+    font: normal 15px "Geometria Medium";
+    line-height: 24px;
+}
+
+footer > .main > .list a:hover {
+    color: #01E6AB;
+}
+
+footer > .work-schedule {
+    grid-area: work-schedule;
+}
+
+footer > .work-schedule > .list > .item {
+    font: normal 15px "Geometria Medium";
+    line-height: 1.6;
+}
+
+footer > .work-schedule > .phone {
+    font: normal 18px "TacticSans Bold";
+    line-height: 1.33;
+    margin-top: 22px;
+}
+
+footer > .work-schedule > .list > .item:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+footer > .subscribe {
+    grid-area: subscribe;
+}
+
+footer > .subscribe > .email {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 4px;
+}
+
+footer > .subscribe > .email > input {
+    padding: 8px;
+    padding-right: 2px;
+    width: 100%;
+    height: 44px;
+    font: normal 15px "Geometria Medium";
+}
+
+footer > .subscribe > .email > input::placeholder {
+    color: rgb(53, 52, 52);
+}
+
+footer > .subscribe > .email > button {
+    padding: 8px 23px;
+    background: #01E6AB;
+    cursor: pointer;
+    font: normal 15px "Geometria Medium";
+}
+
+footer > .subscribe > .email > button:hover {
+    background: black;
+    color: white;
+}
+
+footer > .subscribe > .description {
+    margin-top: 12px;
+    font: normal 12px "Geometria Medium";
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.3;
+}
+
+footer > .social {
+    grid-area: social;
+}
+
+footer > .social > .list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0px;
+}
+
+footer > .social > .list > .item {
+    height: 24px;
+}
+
+footer > .social > .list > .item:not(:first-child) {
+    margin-top: 4px;
+}
+
+footer > .social > .list > .item > a:hover {
+    color: #01E6AB;
+}
+
+footer > .social > .list > .item > a:hover > .image.default {
+    display: none;
+}
+
+footer > .social > .list > .item > a:hover > .image.active {
+    display: inline-flex;
+}
+
+footer > .social > .list a {
+    display: inline-flex;
+    align-items: center;
+    font: normal 15px "Geometria Medium";
+}
+
+footer > .social > .list a > .image {
+    display: inline-flex;
+    width: 13.9px;
+    height: 13.9px;
+    margin-right: 9px;
+}
+
+footer > .social > .list a > .image.active {
+    display: none;
+}
+
+footer > .other {
+    grid-area: other;
+    margin-top: 35px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+footer > .other .list {
+    display: flex;
+    padding: 16px 0px;
+}
+
+footer > .other .list > .item {
+    color: #787878;
+    font: normal 12px "Geometria Medium";
+}
+
+footer > .other .list > a.item:hover {
+    color: #01E6AB;
+}
+
+footer > .other .list > .item:not(:first-child) {
+    margin-left: 14px;
+}

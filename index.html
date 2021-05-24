@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ТРЦ Гравитация</title>
+        <link href="./images/icon.png" rel="shortcut icon" type="image/png" />
+        <link href="./styles/index.css" rel="stylesheet" />
+        <link href="./styles/header.css" rel="stylesheet" />
+        <link href="./styles/main.css" rel="stylesheet" />
+        <link href="./styles/footer.css" rel="stylesheet" />
+        <link href="./styles/search.css" rel="stylesheet" />
+        <script src="./scripts/index.js" defer></script>
+    </head>
+    <body>
+        <div class="search hide">
+            <div class="input">
+                <div class="left">
+                    <input placeholder="Что вы хотите найти?" />
+                </div>
+                <div class="right">
+                    <button class="close"></button>
+                </div>
+            </div>
+        </div>
+        <header>
+            <div class="left">
+                <a href="#"><span class="logo"></span></a>
+                <nav>
+                    <a href="#shops">Магазины</a>
+                    <a href="#food">Еда</a>
+                    <a href="#entertainment">Развлечения</a>
+                    <a href="#services">Услуги</a>
+                    <a href="#news">События</a>
+                </nav>
+            </div>
+            <div class="right">
+                <nav>
+                    <a href="#time"><img src="./images/header/nav-time.svg" /></a>
+                    <a href="#map"><img src="./images/header/nav-map.svg" /></a>
+                    <a href="#contacts"><img src="./images/header/nav-contacts.svg" /></a>
+                    <a class="search"><img src="./images/header/nav-search.svg" /></a>
+                </nav>
+                <span class="social">
+                    <div class="list">
+                        <a class="item" href="#facebook">
+                            <img class="image default" src="./images/header/nav-social-facebook.svg" />
+                            <img class="image active" src="./images/header/nav-social-facebook-active.svg" />
+                        </a>
+                        <a class="item" href="#instagram">
+                            <img class="image default" src="./images/header/nav-social-instagram.svg" />
+                            <img class="image active" src="./images/header/nav-social-instagram-active.svg" />
+                        </a>
+                    </div>
+                </span>
+            </div>
+        </header>
+        <main>
+            <section class="main">
+                <div class="content">
+                    <h1 class="title">С Новой<br />Гравитацией!</h1>
+                    <h2 class="title">Мы открыты!</h2>
+                </div>
+            </section>
+            <section class="navigation">
+                <nav>
+                    <a href="#shops">
+                        <div class="title">Магазины</div>
+                        <div class="image default" style="--url: url(../images/main/nav-shops.svg);"></div>
+                        <div class="image active" style="--url: url(../images/main/nav-shops-active.svg);"></div>
+                        <div class="go">
+                            <span class="text">перейти</span>
+                            <span class="arrow"></span>
+                        </div>
+                    </a>
+                    <a href="#food">
+                        <div class="title">Еда</div>
+                        <div class="image default" style="--url: url(../images/main/nav-food.svg);"></div>
+                        <div class="image active" style="--url: url(../images/main/nav-food-active.svg);"></div>
+                        <div class="go">
+                            <span class="text">перейти</span>
+                            <span class="arrow"></span>
+                        </div>
+                    </a>
+                    <a href="#services">
+                        <div class="title">Услуги и сервисы</div>
+                        <div class="image default" style="--url: url(../images/main/nav-services.svg);"></div>
+                        <div class="image active" style="--url: url(../images/main/nav-services-active.svg);"></div>
+                        <div class="go">
+                            <span class="text">перейти</span>
+                            <span class="arrow"></span>
+                        </div>
+                    </a>
+                    <a href="#entertainment">
+                        <div class="title">Развлечения</div>
+                        <div class="image default" style="--url: url(../images/main/nav-entertainment.png);"></div>
+                        <div class="image active" style="--url: url(../images/main/nav-entertainment-active.png);"></div>
+                        <div class="go">
+                            <span class="text">перейти</span>
+                            <span class="arrow"></span>
+                        </div>
+                    </a>
+                    <a href="#news">
+                        <div class="title">События</div>
+                        <div class="image default" style="--url: url(../images/main/nav-news.png);"></div>
+                        <div class="image active" style="--url: url(../images/main/nav-news-active.png);"></div>
+                        <div class="go">
+                            <span class="text">перейти</span>
+                            <span class="arrow"></span>
+                        </div>
+                    </a>
+                </nav>
+            </section>
+            <section class="news">
+                <a href="#news"><div class="title">Новости и акции</div></a>
+                <div class="list">
+                    <a class="item news" id="1" href="#news-1">
+                        <img class="image" src="./data/news/1/photo.jpg" />
+                        <div class="content">
+                            <span class="category">Новость</span>
+                            <div class="text">Перекресток открыт!</div>
+                            <div class="date">27.02.2021</div>
+                        </div>
+                    </a>
+                    <a class="item news" id="0" href="#news-0">
+                        <img class="image" src="./data/news/0/photo.png" />
+                        <div class="content">
+                            <span class="category">Новость</span>
+                            <div class="text">"Гравитация" открыта!</div>
+                            <div class="date">26.02.2021</div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="main">
+                <div class="logo"></div>
+                <ul class="list">
+                    <li><a href="#arend">Арендаторам</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="#about">О ТРЦ</a></li>
+                </ul>
+            </div>    
+            <div class="work-schedule">
+                <h3 class="title">График работы</h3>
+                <div class="list">
+                    <div class="item">Гравитация<br />10:00-22:00</div>
+                    <div class="item">Перекресток<br />08:00-23:00</div>
+                    <div class="item">Макдоналдс<br />08:00-23:00</div>
+                </div>
+                <a class="phone" href="tel: 8 495 781-28-56">8 495 781-28-56</a>
+            </div>
+            <div class="subscribe">
+                <h3 class="title">Подписаться</h3>
+                <div class="email">
+                    <input placeholder="Ваш e-mail" />
+                    <button>Подписаться</button>
+                </div>
+                <div class="description">
+                    Подписываясь на рассылку, вы даете согласие на получение информационных писем и на обработку персональных данных.
+                </div>
+            </div>
+            <div class="social">
+                <h3 class="title">Мы в соцсетях</h3>
+                <ul class="list">
+                    <li class="item">
+                        <a href="#facebook">
+                            <img class="image default" src="./images/footer/social-facebook.png" />
+                            <img class="image active" src="./images/footer/social-facebook-active.png" />
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#instagram">
+                            <img class="image default" src="./images/footer/social-instagram.png" />
+                            <img class="image active" src="./images/footer/social-instagram-active.png" />
+                            Instagram
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="other">
+                <div class="left">
+                    <div class="list">
+                        <a class="item" href="#personal-data-processing-policy">Политика в отношении обработки персональных данных</a>
+                        <a class="item" href="#rules">Правила ТРЦ</a>
+                        <span class="item">©2021 «Гравитация»</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
